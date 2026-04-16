@@ -412,39 +412,60 @@
             width: 100%;
         }
 
-        @media(max-width:768px) {
-            nav a {
-                font-size: .8rem;
-                padding: .3rem .6rem;
-            }
-            
-            .hero h1 {
-                font-size: 1.5rem;
-            }
-            
-            .section-title {
-                font-size: 1.5rem;
-            }
-            
-            .scroll-btn {
-                width: 40px;
-                height: 40px;
-                font-size: 1rem;
-                right: 15px;
-            }
-            
-            #backToTop {
-                bottom: 65px;
-            }
-            
-            #goToBottom {
-                bottom: 15px;
-            }
-            
-            .meta-row {
-                grid-template-columns: 1fr;
-            }
-        }
+      @media(max-width:768px) {
+
+    nav ul {
+        gap: 0.3rem;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .profile-img {
+        width: 130px;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr; /* ✅ stack */
+    }
+
+    .meta-row {
+        grid-template-columns: 1fr; /* ✅ stack */
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .scroll-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9rem;
+        right: 10px;
+    }
+
+    #backToTop {
+        bottom: 60px;
+    }
+
+    #goToBottom {
+        bottom: 10px;
+    }
+}
     </style>
 </head>
 <body>
