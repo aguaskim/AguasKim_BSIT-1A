@@ -4,66 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Layout 4 </title>
+    <title>Layout 4</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        .layout4-section {
+            background-color: #e6f3ff;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
 
-<link rel="stylesheet" href="Layout4.css">
+        .layout4-title {
+            color: #00008b;
+            font-weight: bold;
+            margin-bottom: 30px;
+            padding-left: 10px;
+        }
 
+        .custom-card {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .card-number {
+            color: #00008b;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #495057;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .btn-read-more {
+            background-color: #17a2b8;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+        }
+
+        .btn-read-more:hover {
+            background-color: #138496;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
+    <h2 class="mb-3">Layout 4</h2>
 
-<h2 class="mb-3">Layout 4</h2>
+    <div class="layout4-section">
+        <div class="container-fluid">
 
-<div class="layout4-section">
-    <div class="container-fluid">
+            <h2 class="layout4-title">Bootstrap Grid Responsive</h2>
 
-        <h2 class="layout4-title">Bootstrap Grid Responsive</h2>
+            <div class="row g-4">
 
-        <div class="row g-4">
-
-            <!-- CARD 1 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="custom-card">
-                    <div class="card-number">01</div>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit reiciendis maxime 
-                        possimus assumenda quidem, soluta, est quia harum dicta qui delectus corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illum voluptatum eaque totam autem temporibus aperiam quam, quasi maiores, quaerat culpa fugiat possimus, magni ullam tempora perferendis ad veritatis vero.
-                    </p>
-                    <button class="btn btn-read-more">Read more...</button>
+                <!-- CARD 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-number">01</div>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit reiciendis maxime 
+                            possimus assumenda quidem, soluta, est quia harum dicta qui delectus corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illum voluptatum eaque totam autem temporibus aperiam quam, quasi maiores, quaerat culpa fugiat possimus, magni ullam tempora perferendis ad veritatis vero.
+                        </p>
+                        <button class="btn btn-read-more">Read more...</button>
+                    </div>
                 </div>
-            </div>
 
-            <!-- CARD 2 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="custom-card">
-                    <div class="card-number">02</div>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis facilis porro 
-                        illo molestiae! Cum eaque commodi impedit labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eligendi impedit, libero possimus totam nisi velit quisquam expedita vel sunt. Voluptate, quam excepturi voluptatum suscipit expedita blanditiis fuga fugit dicta.
-                    </p>
-                    <button class="btn btn-read-more">Read more...</button>
+                <!-- CARD 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-number">02</div>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis facilis porro 
+                            illo molestiae! Cum eaque commodi impedit labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eligendi impedit, libero possimus totam nisi velit quisquam expedita vel sunt. Voluptate, quam excepturi voluptatum suscipit expedita blanditiis fuga fugit dicta.
+                        </p>
+                        <button class="btn btn-read-more">Read more...</button>
+                    </div>
                 </div>
-            </div>
 
-            <!-- CARD 3 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="custom-card">
-                    <div class="card-number">03</div>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident labore 
-                        eos aperiam fuga numquam delectus velit nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste at culpa est distinctio doloribus velit maiores sequi debitis corrupti? Commodi, exercitationem iusto quidem impedit voluptatem assumenda nostrum dolore placeat iste.
-                    </p>
-                    <button class="btn btn-read-more">Read more...</button>
+                <!-- CARD 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="card-number">03</div>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident labore 
+                            eos aperiam fuga numquam delectus velit nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste at culpa est distinctio doloribus velit maiores sequi debitis corrupti? Commodi, exercitationem iusto quidem impedit voluptatem assumenda nostrum dolore placeat iste.
+                        </p>
+                        <button class="btn btn-read-more">Read more...</button>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-</div>
 
 </body>
 </html>
